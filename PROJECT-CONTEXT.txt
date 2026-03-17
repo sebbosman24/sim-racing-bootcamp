@@ -1,0 +1,202 @@
+SIM RACING BOOTCAMP — PROJECT CONTEXT
+======================================
+
+ROLE & MOTIVATION
+-----------------
+Built by Sebastian Bosman, Senior Product Manager.
+The goal: build a top-of-funnel growth lever for Track Titan — a sim racing coaching platform — by targeting the fast-growing F1 fan audience. F1's global fanbase has grown 63% since 2018, driven by a younger, Drive to Survive-origin cohort with deep emotional investment in the sport but no pathway into sim racing. This product bridges that gap and funnels qualified users directly into Track Titan.
+
+
+RESEARCH PHASE
+--------------
+Before a single line of code was written, five AI research agents were spawned in parallel to validate the opportunity and define the product approach.
+
+Agent 1 — F1 Growth Trajectory
+Investigated: F1's global audience growth, demographic shifts, the Drive to Survive effect, viewership trends by region, and the emerging cohort of fans who identify with F1 as culture rather than just sport.
+
+Key findings:
+- F1 fanbase grew from 490M to 827M between 2018 and 2024 (+63%)
+- The fastest-growing demographic: 16–35 year olds, with significant female audience growth
+- Drive to Survive created a cohort of identity-driven fans — they follow the drama, the drivers, the circuits — and increasingly want to participate, not just watch
+- iRacing hit 300,000 simultaneous active accounts in January 2025, suggesting real demand for sim racing
+- No product exists to convert F1 fan interest into a first sim racing session
+
+Agent 2 — F1 Fan to Sim Racing Funnel
+Investigated: the actual conversion path from F1 fan to sim racer, where people get stuck, what decisions they face, and what motivates or blocks them.
+
+Key findings:
+- The five-layer bridging problem: fans hit consecutive barriers — hardware paralysis, game selection confusion, technique gaps, and sim ecosystem illiteracy — with no single product guiding them through
+- Most YouTube content covers hardware and game selection but skips driving technique entirely and never explains the online racing ecosystem (safety ratings, incident points, flag rules)
+- The emotional hook is identity, not instruction — fans want to feel like drivers, not students
+- "Budget" and "platform" decisions create friction too early; identity questions build engagement
+
+Agent 3 — Sim Racing Onboarding Landscape
+Investigated: every major onboarding touchpoint in the sim racing ecosystem — iRacing, Assetto Corsa Competizione, Gran Turismo 7, YouTube channels (Boosted Media, Jimmy Broadbent, Aarava, Coach Dave Academy), Reddit communities, and existing beginner guides.
+
+Key findings:
+- iRacing is "functional for informed users, actively hostile to cold-start newcomers"
+- ACC gives beginners zero onboarding: setup options appear immediately with no guidance
+- Gran Turismo 7 is the best-in-class for onboarding but its physics don't transfer to simulation
+- No YouTube channel has produced a sequenced, progressive beginner series — content is episodic and topic-based, not designed for learning
+- The gap: no product bridges F1 fan → sim racing competence with a structured, personalised, interactive flow
+
+Agent 4 — Track Titan Positioning
+Investigated: Track Titan's current product, audience, and positioning relative to the sim racing coaching market.
+
+Key findings:
+- Track Titan is a telemetry coaching platform — primarily serving active sim racers who want to improve
+- No pre-acquisition funnel exists; Track Titan has no content or product targeting the "I want to start sim racing" phase
+- The product-market fit gap: Track Titan speaks to existing sim racers, not the F1 fan who hasn't yet made the leap
+- An onboarding funnel that delivers identity-affirming personalisation could drive significant top-of-funnel volume
+
+Agent 5 — Product Validation & Virality Mechanics
+Investigated: what makes quiz-based identity products shareable, how to design for viral loops, and what signals from the F1 community indicate demand.
+
+Key findings:
+- Personality-based results that feel "uncannily accurate" drive social sharing — the identity label is the product
+- F1 fans respond strongly to personality framing tied to real drivers (Verstappen as aggressive risk-taker, Hamilton as smooth strategist, Alonso as tactical mastermind)
+- Shareable cards with a named archetype create the viral loop: "I'm The Monaco Specialist — what are you?"
+- The quiz itself must feel like an F1 personality test, not a shopping decision tree
+
+
+HOW RESEARCH SHAPED THE PRODUCT
+---------------------------------
+Every major product decision traces directly back to research findings:
+
+1. The quiz was originally 7 questions including budget range and gaming platform — designed for hardware recommendations. Research showed these are purchasing decisions that create friction for cold paid-ad audiences. The quiz was redesigned around identity: what draws you to F1, which driver speaks to you, which circuit would you start on. No transactional questions.
+
+2. The Driver DNA archetype — the named, F1-coded personality type — became the core of the product. Research confirmed that identity-affirming results are the single biggest driver of sharing behaviour. Everything else became secondary to getting this moment right.
+
+3. Hardware recommendations were removed from the results page entirely. Research showed that presenting a £299 wheel recommendation to someone who just clicked a Facebook ad is premature and off-putting. The hardware conversation belongs inside Track Titan, not the funnel.
+
+4. The 4-week curriculum was removed. Time-based commitments ("Week 1: do this, Week 2: do that") create pressure rather than confidence for someone who hasn't yet committed to the sport. It was replaced with four simple, concept-based steps — Your Rookie Season — framed as insights, not a schedule.
+
+5. The share card was made a centrepiece. Research confirmed the archetype label is the viral mechanic. The DNA card lives inside the results page with one-tap sharing to X and Reddit. The named archetype is what gets screenshotted.
+
+6. The circuit selection question was included specifically to personalise step one of the Rookie Season — "Learn your favourite track: Silverstone" — creating a moment of personalisation that feels immediate and specific.
+
+7. The CTA was rewritten to connect Driver DNA to Track Titan's telemetry value rather than hardware readiness: "Your Driver DNA is just the start. Track Titan's telemetry will show you exactly how your natural style plays out on circuit — and where the tenths are hiding."
+
+
+THE PRODUCT STRATEGY
+---------------------
+Sim Racing Bootcamp is not a sim racing onboarding tool. It is a growth lever — a paid ad funnel built specifically for F1 fans, designed to:
+
+1. Make the user feel seen and identified (Driver DNA archetype)
+2. Give them enough context to feel like an insider (Rookie Season steps)
+3. Create a shareable identity moment (the card, the archetype name)
+4. Hand them to Track Titan with confidence and momentum (the CTA)
+
+The product is stateless — no accounts, no database, no friction. A user arrives from an ad, answers 7 questions, gets their Driver DNA in under 10 seconds, and is one tap from Track Titan.
+
+
+HOW IT WORKS
+------------
+1. User lands from a paid ad targeting F1 fans
+2. Takes a 7-question identity quiz (feels like an F1 personality test, not a form)
+3. F1 start lights animation plays while Claude generates their profile (turns API latency into a branded moment)
+4. Results reveal: Driver DNA archetype with name, 4 single-word traits, and share buttons
+5. Your Rookie Season — 4 conceptual steps into sim racing, step 1 personalised with their chosen circuit
+6. Track Titan CTA with personalised hook connecting their DNA to telemetry coaching
+7. Share to X or Reddit — the archetype name drives organic loops
+
+
+THE QUIZ (7 QUESTIONS)
+-----------------------
+All identity-based, no transactional questions:
+
+1. How did you discover Formula 1? (Drive to Survive / Always been a fan / Friends & family / F1 games)
+2. What draws you to F1? (Strategy / Raw speed / Rivalries & drama / The circuits)
+3. Which driver's style speaks to you? (Verstappen / Hamilton / Leclerc / Alonso / Russell)
+4. Have you tried sim racing before? (Never / F1 games on controller / Wheel setup / Sim race regularly)
+5. How would you describe your approach? (Instinctive / Methodical / Aggressive / Patient)
+6. What's the goal? (Master a circuit / Beat people online / Understand racing like a driver / Just feel it)
+7. Which circuit would you start on? (Silverstone / Monaco / Spa / Monza / Suzuka / Interlagos / Singapore / Bahrain)
+
+Each answer feeds a context string injected into the Claude prompt — 7 signals that shape the archetype, traits, tagline, and Track Titan hook.
+
+
+THE DRIVER DNA
+--------------
+Generated by Claude Haiku from all 7 quiz signals. Output:
+- Archetype name: evocative, F1-coded ("The Monaco Specialist", "The Apex Hunter", "The Data Whisperer")
+- 4 single-word traits displayed as visual tiles with icons: ⚡ ◎ ▲ ◆
+- Archetype tagline: one sentence that makes them feel uncannily seen
+- Track Titan hook: personalised bridge from their DNA to Track Titan's coaching
+
+The Driver DNA is the product. Everything else frames and amplifies it.
+
+
+YOUR ROOKIE SEASON
+------------------
+Four hardcoded conceptual steps — not a time-based curriculum, not a schedule. Framed as the things every sim racer must internalise, in order:
+
+1. Learn your favourite track: [circuit they chose] — personalised from question 7
+2. Discover the racing line — the insight that works everywhere
+3. Pick your braking points — consistency before bravery
+4. Smooth is fast — throttle control, the car rewards patience
+
+Designed for someone who hasn't committed yet. Concepts, not instructions. Confidence, not pressure.
+
+
+TECH STACK
+----------
+- Framework: Next.js 16.1.7 (App Router, React 19, Turbopack)
+- Styling: Tailwind CSS v4 (CSS-first config, custom brand tokens)
+- Font: Racing Sans One (display) + Geist Sans (body)
+- AI: Anthropic Claude Haiku via @anthropic-ai/sdk — server-side only, structured JSON output
+- Encoding: base64url for shareable Driver DNA card URLs
+- OG images: next/og ImageResponse for dynamic share card previews
+- Rate limiting: in-memory IP-based (10 req/min)
+- Deployment: Railway via nixpacks, standalone Next.js output
+- State: sessionStorage for quiz answers — fully stateless, no database
+
+
+DESIGN DECISIONS
+----------------
+Colour: #F67A22 (Track Titan orange) replaces the original F1 red. The brand signal is Track Titan, not Formula 1.
+
+Loading state: F1 start lights animation — 5 lights illuminate one by one, then go out. Converts 5–8 seconds of API latency into a recognisable, branded moment that F1 fans immediately understand.
+
+Results layout: single page, no overwhelming scroll. DNA card at top (archetype + traits + share), Rookie Season below, Track Titan CTA at the bottom. Designed to feel like a driver briefing card — complete at a glance.
+
+Typography: Racing Sans One for archetype names — the display font does the emotional heavy lifting. Everything else is clean and minimal.
+
+Share card: integrated into the DNA card itself. One-tap share to X or Reddit. The archetype name is the tweet. "I'm The Monaco Specialist — what are you?"
+
+
+PRODUCT ITERATION LOG
+---------------------
+The product went through significant strategic iteration during build:
+
+Version 1 — Sim Racing Onboarding Tool
+Original framing: a structured onboarding flow for new sim racers. Featured hardware recommendations (wheel, pedals, 3-month upgrade), game recommendations, and a 4-week curriculum with 12 specific session descriptions. Aimed at someone who had decided to start sim racing.
+
+Version 2 — Growth Hack Reframe
+Reframed as a paid ad funnel for Track Titan targeting F1 fans. Key insight: the original audience (someone who has decided to buy a wheel) is much smaller than the target audience (F1 fan who is curious about what driving would feel like). The product needed to meet people much earlier in their intent journey.
+
+Changes made in reframe:
+- Quiz: removed budget, platform, weekly hours (transactional) → replaced with draws, approach, circuit (identity)
+- Results: removed hardware recommendations entirely
+- Results: removed 4-week curriculum → replaced with 4 conceptual Rookie Season steps
+- Results: brought share card to the foreground as a primary feature
+- CTA: rewritten from hardware-readiness to DNA-to-telemetry bridge
+- Landing page: removed "exact hardware to buy" copy → "Discover your Driver DNA"
+
+Version 3 — Visual Simplification
+Multiple rounds of copy and design reduction based on the principle that overwhelm kills conversion:
+- Removed trait pills from DNA card → replaced with icon + single word tiles in a row
+- Removed hardware "why" descriptions → name and price only, then removed entirely
+- Removed race prediction from DNA card → archetype name alone carries the moment
+- Removed all section copy headings like "Sim Racing Bootcamp" and "Your Racing Plan"
+- "Your Journey" → "Your Rookie Season" (F1-coded, positions user as a driver not a fan)
+- Share card: redesigned from text pills to 4 visual icon tiles, integrated into DNA card
+
+
+OUTCOME
+-------
+- A stateless, sub-10-second quiz-to-result experience designed for paid ad traffic
+- Driver DNA archetype creates a shareable identity moment that drives organic loops
+- The Rookie Season gives F1 fans enough context to feel confident without overwhelming them
+- Track Titan CTA is the only conversion point — clean, singular, motivated
+- Built to run on Railway with zero infrastructure overhead and no database dependencies

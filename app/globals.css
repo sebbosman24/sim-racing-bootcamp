@@ -1,26 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap");
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --tt-red: #F67A22;
+  --tt-silver: #9ca3af;
+  --tt-dark: #141414;
+  --tt-border: #2a2a2a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-tt-red: var(--tt-red);
+  --color-tt-silver: var(--tt-silver);
+  --color-tt-dark: var(--tt-dark);
+  --color-tt-border: var(--tt-border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-display: "Racing Sans One", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+.font-display {
+  font-family: "Racing Sans One", sans-serif;
+}
+
+/* F1 start lights animation */
+@keyframes light-on {
+  0% { background-color: #1a0e00; box-shadow: none; }
+  100% { background-color: #F67A22; box-shadow: 0 0 20px #F67A22, 0 0 40px #F67A2280; }
+}
+
+@keyframes light-off {
+  0% { background-color: #F67A22; box-shadow: 0 0 20px #F67A22, 0 0 40px #F67A2280; }
+  100% { background-color: #1a0e00; box-shadow: none; }
+}
+
+.light-on {
+  animation: light-on 0.15s ease forwards;
+}
+
+.light-off {
+  animation: light-off 0.3s ease forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
