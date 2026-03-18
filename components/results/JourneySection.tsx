@@ -27,7 +27,7 @@ export function JourneySection({ circuit }: JourneySectionProps) {
   return (
     <div className="space-y-3 animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both">
       <h3 className="text-[#9ca3af] font-semibold text-xs tracking-widest uppercase">Your Rookie Season</h3>
-      <div className="rounded-xl border border-[#2a2a2a] bg-[#141414] px-4 py-2">
+      <div className="px-0 py-2">
         {STEPS.map((step, i) => (
           <div key={step.number} className="relative flex gap-4 py-4">
             {i < STEPS.length - 1 && (

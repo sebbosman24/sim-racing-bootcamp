@@ -136,8 +136,8 @@ export function ResultsStream({ answers }: ResultsStreamProps) {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] py-6 px-4">
-      <div className="max-w-2xl mx-auto space-y-4">
+    <div className="min-h-screen bg-[#0a0a0a] py-4 px-4">
+      <div className="max-w-2xl mx-auto space-y-6">
 
         {result && shareId && <DriverDNASection dna={result.driver_dna} shareId={shareId} />}
 

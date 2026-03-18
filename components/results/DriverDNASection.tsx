@@ -21,19 +21,19 @@ export function DriverDNASection({ dna, shareId }: DriverDNASectionProps) {
 
   return (
     <div className="animate-in fade-in zoom-in-95 duration-500 fill-mode-both">
-      <div className="relative rounded-2xl border border-[#F67A22]/30 bg-gradient-to-br from-[#1a0e00] via-[#141414] to-[#0a0a0a] p-6 sm:p-8 overflow-hidden">
+      <div className="relative rounded-2xl border border-[#F67A22]/30 bg-gradient-to-br from-[#1a0e00] via-[#141414] to-[#0a0a0a] p-4 sm:p-8 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-[#F67A22]/5 to-transparent pointer-events-none" />
 
-        <p className="text-[#F67A22] text-xs font-semibold tracking-widest uppercase mb-4">
+        <p className="text-[#9ca3af] text-xs font-semibold tracking-widest uppercase mb-4">
           Your Driver DNA
         </p>
 
-        <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl text-[#ededed] leading-tight mb-6">
+        <h2 className="font-display text-2xl sm:text-4xl lg:text-5xl text-[#ededed] leading-tight mb-4">
           {dna.archetype_name}
         </h2>
 
         {/* 4-across trait row */}
-        <div className="grid grid-cols-4 gap-2 mb-6">
+        <div className="grid grid-cols-4 gap-2 mb-4">
           {dna.traits.map((trait, i) => (
             <div
               key={trait}
