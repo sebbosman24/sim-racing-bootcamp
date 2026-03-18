@@ -44,7 +44,7 @@ export function QuizShell() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] flex flex-col">
+    <div className="h-screen overflow-hidden bg-[#0a0a0a] flex flex-col">
       {/* Header */}
       <div className="px-4 pt-6 pb-4">
         <div className="max-w-xl mx-auto flex items-center justify-between">

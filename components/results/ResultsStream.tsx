@@ -28,7 +28,7 @@ function StartLights({ onComplete }: { onComplete: () => void }) {
   }, [onComplete]);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center gap-8">
+    <div className="h-screen overflow-hidden bg-[#0a0a0a] flex flex-col items-center justify-center gap-8">
       <p className="text-[#9ca3af] text-sm tracking-widest uppercase">Generating your Driver DNA</p>
       <div className="flex gap-3">
         {[1, 2, 3, 4, 5].map((n) => (
@@ -120,7 +120,7 @@ export function ResultsStream({ answers }: ResultsStreamProps) {
 
   if (phase === "loading") {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center gap-4">
+      <div className="h-screen overflow-hidden bg-[#0a0a0a] flex flex-col items-center justify-center gap-4">
         <div className="inline-flex gap-1.5">
           {[0, 1, 2].map((i) => (
             <div
